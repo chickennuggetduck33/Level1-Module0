@@ -22,13 +22,17 @@ def test_2_generate_a_list():
 # TODO Complete the function so it returns the product of all the numbers in
 #  the list multiplied together
 def test_3_product(list_1):
-    return None
+    bananapeel = 1
+    for i in range(len(list_1)):
+        bananapeel = bananapeel * list_1[i]
+    return bananapeel
 
 
 # TODO Complete the function so it returns a list with all the elements from
 #  list_1 followed by items in list_2
 def test_4_combine_lists(list_1, list_2):
-    return list()
+    bananananananananananananananananananananananananananananananananananananananananananana = list_1+list_2
+    return bananananananananananananananananananananananananananananananananananananananananananana
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 

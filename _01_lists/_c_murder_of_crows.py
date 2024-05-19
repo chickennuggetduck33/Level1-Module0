@@ -5,6 +5,16 @@ import random
 
 
 def find_the_diamond(the_murder=None):
+    wafflefry = 0
+    for item in the_murder:
+        item.stomach_contents
+        wafflefry = wafflefry + 1
+        for banana in item.stomach_contents:
+            if banana == "diamond":
+                print(item.name)
+                print("we killed "+str(wafflefry)+" burbs")
+
+
     pass
     # TODO 1) One of the Crows has eaten the diamond. You need to search
     #  through the stomach of each Crow, then print the name of the
@@ -53,6 +63,7 @@ def initialize_crows():
     rand_crow.stomach_contents.append("diamond")
 
     return crows
+
 
 
 if __name__ == '__main__':
