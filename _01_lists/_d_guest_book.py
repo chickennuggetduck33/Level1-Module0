@@ -7,6 +7,8 @@ import tkinter as tk
 
 # TODO 1) Complete the function by:
 #         a. Asking for the name of the guest to add
+guests = []
+guesttoadd = simpledialog.askstring(title="guest to add", prompt="what is the name of the guest you would like to add?")
 #         b. Add the guest to list_of_guests
 #         c. Return the list_of_guests
 def add_guest(list_of_guests):
