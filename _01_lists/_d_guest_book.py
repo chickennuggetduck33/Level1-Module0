@@ -7,13 +7,14 @@ import tkinter as tk
 
 # TODO 1) Complete the function by:
 #         a. Asking for the name of the guest to add
-guests = []
-guesttoadd = simpledialog.askstring(title="guest to add", prompt="what is the name of the guest you would like to add?")
+
+
 #         b. Add the guest to list_of_guests
 #         c. Return the list_of_guests
 def add_guest(list_of_guests):
-
-    return list()
+    guesttoadd = simpledialog.askstring(title="guest to add", prompt="what is the name of the guest you would like to add?")
+    list_of_guests.append(guesttoadd)
+    return list_of_guests
 
 # TODO 2) Complete the function by:
 #         a. Asking for the name of the guest to remove
@@ -21,8 +22,9 @@ def add_guest(list_of_guests):
 #            the guest isn't in the list.
 #         c. Return the list_of_guests
 def remove_guest(list_of_guests):
-
-    return list()
+    guesttoremove = simpledialog.askstring(title="guest to remove", prompt="what is the name of the guest you would like to remove?")
+    list_of_guests.remove(guesttoremove)
+    return list_of_guests
 
 # TODO 3) Complete the function by:
 #         a. Display the names of the guests in the following format:
@@ -31,7 +33,9 @@ def remove_guest(list_of_guests):
 #            Guest 3. Jin
 #         b. If there are no guests, print "There are no guests"
 def print_guests(list_of_guests):
-    pass
+    for item in list_of_guests:
+        messagebox.showinfo(None, message=item)
+
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
