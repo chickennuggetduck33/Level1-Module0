@@ -35,6 +35,9 @@ def remove_guest(list_of_guests):
 def print_guests(list_of_guests):
     for item in list_of_guests:
         messagebox.showinfo(None, message=item)
+    rizzler = len(list_of_guests)
+    if rizzler == 0:
+        messagebox.showinfo(None, message="there are no guests to display")
 
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
