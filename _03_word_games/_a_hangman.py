@@ -7,8 +7,9 @@ from tkinter import messagebox
 #  word_to_guess = orange (a string)
 #  return          ______ (a string with 6 underscores)
 def setup_new_word(word_to_guess):
-
-    return str()
+    length = len(word_to_guess)
+    beans = "_" * length
+    return beans
 
 # TODO 2) Complete the function to return whether the letter is in
 #  the word to guess
@@ -16,8 +17,10 @@ def setup_new_word(word_to_guess):
 #  letter = o (a string)
 #  return True
 def check_letter_in_word(word_to_guess, letter):
-
-    return False
+    if letter in word_to_guess:
+        return True
+    else:
+        return False
 
 # TODO 3) Complete the function to return the current guess with the
 #  letter in the same places (index) of the word to guess. For example,
