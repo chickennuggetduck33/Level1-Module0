@@ -8,8 +8,8 @@ from tkinter import messagebox
 #  return          ______ (a string with 6 underscores)
 def setup_new_word(word_to_guess):
     length = len(word_to_guess)
-    beans = "_" * length
-    return beans
+    current_guess = "_" * length
+    return current_guess
 
 # TODO 2) Complete the function to return whether the letter is in
 #  the word to guess
@@ -30,8 +30,13 @@ def check_letter_in_word(word_to_guess, letter):
 #       return o__nge (a string)
 #  Remember that strings can't be changed directly!
 def replace_letter_in_word(word_to_guess, current_guess, letter):
-
-    return str()
+    string = ""
+    for i in range(len(word_to_guess)):
+        if letter == word_to_guess[i]:
+            string += letter
+        else:
+            string += current_guess[i]
+    return string
 
 # ====================== DO NOT EDIT THE CODE BELOW ===========================
 
